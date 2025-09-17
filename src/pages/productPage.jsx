@@ -39,7 +39,7 @@ const ProductDetail = () => {
         <h2 className={styles.title}>{product.title}</h2>
         <p className={styles.category}>{product.category}</p>
         <p className={styles.desc}>{product.description}</p>
-        <p className={styles.price}>${product.price}</p>
+        <p className={styles.price}>₹{product.price}</p>
         <p className={styles.rating}>
           ⭐ {product.rating?.rate} ({product.rating?.count} reviews)
         </p>
