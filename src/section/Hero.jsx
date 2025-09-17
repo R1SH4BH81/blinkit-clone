@@ -1,7 +1,7 @@
 import styles from "./styles/hero.module.css";
-import { HeroHeader } from "../components/HeroHeader";
-import HeroWelcome from "../components/HeroWelcome";
-import SearchBar from "../components/SearchBar";
+import { HeroHeader } from "../components/HHeader";
+import HeroWelcome from "../components/HWelcome";
+import SearchBar from "../components/HSearch";
 const Hero = () => {
   return (
     <div className={styles.heroSection}>
