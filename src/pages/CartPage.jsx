@@ -77,7 +77,7 @@ const CartPage = () => {
                 <div className={styles.itemPricing}>
                   <p className={styles.itemPrice}>${item.price}</p>
                   <p className={styles.itemTotal}>
-                    Total: ${(item.price * item.qty).toFixed(2)}
+                    Total: ₹{(item.price * item.qty).toFixed(2)}
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@ const CartPage = () => {
 
             <div className={styles.summaryRow}>
               <span>Subtotal ({getTotalItems()} items):</span>
-              <span>${getTotalPrice()}</span>
+              <span>₹{getTotalPrice()}</span>
             </div>
 
             <div className={styles.summaryRow}>
@@ -101,14 +101,14 @@ const CartPage = () => {
 
             <div className={styles.summaryRow}>
               <span>Tax:</span>
-              <span>$0.00</span>
+              <span>₹0.00</span>
             </div>
 
             <hr className={styles.divider} />
 
             <div className={styles.summaryTotal}>
               <span>Total:</span>
-              <span>${getTotalPrice()}</span>
+              <span>₹{getTotalPrice()}</span>
             </div>
 
             <button className={styles.checkoutBtn}>Proceed to Checkout</button>
