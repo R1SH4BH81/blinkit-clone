@@ -8,19 +8,19 @@ const HeroWelcome = () => {
       <div className={styles.offerCards}>
         <div className={styles.offerCard}>
           <img
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/cake-3d-icon-download-in-png-blend-fbx-gltf-file-formats--birthday-dessert-sweet-food-pack-kitchen-icons-8570317.png"
-            alt="Free Cake"
+            src="https://tse3.mm.bing.net/th/id/OIP.OKWRIsa_ciY6KvZbkZtT1QHaF_?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Free Coke"
             className={styles.offerImage}
           />
           <div className={styles.offerText}>
-            <div className={styles.offerTitle}>Free Cake Cuts</div>
+            <div className={styles.offerTitle}>Free Coke</div>
             <div className={styles.offerDesc}>on order above ₹299</div>
           </div>
         </div>
 
         <div className={styles.offerCard}>
           <img
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/delivery-truck-3d-icon-download-in-png-blend-fbx-gltf-file-formats--van-shipping-logistic-transport-pack-transportation-icons-5562353.png"
+            src="https://assets.website-files.com/5acc07fc6634d231ac4bcca6/6320a021ea9bf3420fa3fd61_food-delivery-man-with-scooter-holding-fast-food-box-mobile-phone-background-fast-food-delivery-service-cartoon-design-concept-vector-illustration_88114-304.jpeg"
             alt="Free Delivery"
             className={styles.offerImage}
           />

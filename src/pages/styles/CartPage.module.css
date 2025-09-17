@@ -43,19 +43,19 @@
 }
 
 .header h1 {
-  color: #0e0e0e;
+  color: var(--text-black);
   margin-bottom: 0.5rem;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
 }
 
 .header p {
-  color: #333;
-  font-size: 1.2rem;
-  font-weight: 500;
+  color: var(--text-semiblack);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-regular);
   position: relative;
   z-index: 1;
 }
