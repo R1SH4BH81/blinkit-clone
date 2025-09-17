@@ -1,0 +1,6 @@
+.heroWelcome {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-normal);
+  color: var(--text-light);
+  text-align: center;
+}

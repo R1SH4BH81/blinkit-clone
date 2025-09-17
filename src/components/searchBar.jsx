@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styles from "./styles/searchBar.module.css";
 import { ProductsContext } from "../contextApi/productContext";
-const searchBar = () => {
+const SearchBar = () => {
   const { setQuery } = useContext(ProductsContext);
   const handleChange = (e) => {
     setQuery(e.target.value);
@@ -23,4 +23,4 @@ const searchBar = () => {
   );
 };
 
-export default searchBar;
+export default SearchBar;

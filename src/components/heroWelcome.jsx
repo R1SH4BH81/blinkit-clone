@@ -1,7 +1,12 @@
-import React from "react";
-
-const heroWelcome = () => {
-  return <div>heroWelcome</div>;
+import styles from "./styles/heroWelcome.module.css";
+const HeroWelcome = () => {
+  return (
+    <>
+      <p className={styles.heroWelcome}>
+        get your groceries delivered in minutes
+      </p>
+    </>
+  );
 };
 
-export default heroWelcome;
+export default HeroWelcome;

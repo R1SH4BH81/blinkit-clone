@@ -1,7 +1,7 @@
 import React from "react";
 import { userIcon } from "../utils/IconHelper";
 import styles from "./styles/heroHeader.module.css";
-export const heroHeader = ({ time, location }) => {
+export const HeroHeader = ({ time, location }) => {
   return (
     <div>
       <div className={styles.header}>

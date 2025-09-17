@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./styles/hero.module.css";
-import { heroHeader } from "../components/heroHeader";
-import { heroWelcome } from "../components/heroWelcome";
-import { searchBar } from "../components/searchBar";
+import { HeroHeader } from "../components/HeroHeader";
+import { HeroWelcome } from "../components/HeroWelcome";
+import { SearchBar } from "../components/SearchBar";
 const heroSection = () => {
   return (
     <div className={styles.heroSection}>
-      <heroHeader />
-      <searchBar />
-      <heroWelcome />
+      <HeroHeader />
+      <SearchBar />
+      <HeroWelcome />
     </div>
   );
 };
