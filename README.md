@@ -16,4 +16,6 @@ This project is a clone of the Blinkit app, built using React and Context APIs f
 
 ---
 
+live at - https://blinkit-clone-nine-nu.vercel.app/
+
 Feel free to contribute or suggest improvements!
