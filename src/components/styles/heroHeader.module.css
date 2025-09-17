@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--text-dark);
+}
+.delTime {
+  font-size: var(--text-base);
+  font-weight: var(--fw-medium);
+  color: var(--text-semiblack);
+}
+.location {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  color: var(--text-semiblack);
+}
+.right {
+  display: flex;
+  align-items: center;
+}
