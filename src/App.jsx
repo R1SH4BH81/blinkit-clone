@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import HeroSection from "./section/HeroSection.jsx";
+import Hero from "./section/Hero.jsx";
 import ProductList from "./components/ProductList.jsx";
 
 import ProductDetail from "./pages/productPage";
@@ -22,7 +22,7 @@ const App = () => {
               path="/"
               element={
                 <>
-                  <HeroSection />
+                  <Hero />
                   <main className="main">
                     <ProductList />
                   </main>

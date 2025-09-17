@@ -169,7 +169,7 @@
   overflow: hidden;
 }
 
-.cartItem::before {
+/* .cartItem::before {
   content: "";
   position: absolute;
   top: 0;
@@ -177,7 +177,7 @@
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, #ffaa02, #ff6b35);
-}
+} */
 
 .cartItem:hover {
   transform: translateY(-4px);

@@ -2,7 +2,7 @@ import styles from "./styles/hero.module.css";
 import { HeroHeader } from "../components/HeroHeader";
 import HeroWelcome from "../components/HeroWelcome";
 import SearchBar from "../components/SearchBar";
-const HeroSection = () => {
+const Hero = () => {
   return (
     <div className={styles.heroSection}>
       <HeroHeader />
@@ -12,4 +12,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
