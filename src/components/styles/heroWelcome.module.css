@@ -1,6 +1,384 @@
 .heroWelcome {
+  .welcomeSection {
+    padding: 1rem 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .welcomeText {
+    font-size: 2rem;
+    color: #8b4513;
+    font-weight: 400;
+    font-family: "Brush Script MT", cursive;
+    margin: 1rem 0 0.5rem;
+    text-transform: lowercase;
+  }
+
+  .welcomeSubtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  .offerCards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offerCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    max-width: 180px;
+  }
+
+  .offerImage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .offerText {
+    text-align: left;
+    flex: 1;
+  }
+
+  .offerTitle {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .offerDesc {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 400;
+  }
   font-size: var(--fs-lg);
+  .welcomeSection {
+    padding: 1rem 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .welcomeText {
+    font-size: 2rem;
+    color: #8b4513;
+    font-weight: 400;
+    font-family: "Brush Script MT", cursive;
+    margin: 1rem 0 0.5rem;
+    text-transform: lowercase;
+  }
+
+  .welcomeSubtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  .offerCards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offerCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    max-width: 180px;
+  }
+
+  .offerImage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .offerText {
+    text-align: left;
+    flex: 1;
+  }
+
+  .offerTitle {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .offerDesc {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 400;
+  }
   font-weight: var(--fw-normal);
+  .welcomeSection {
+    padding: 1rem 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .welcomeText {
+    font-size: 2rem;
+    color: #8b4513;
+    font-weight: 400;
+    font-family: "Brush Script MT", cursive;
+    margin: 1rem 0 0.5rem;
+    text-transform: lowercase;
+  }
+
+  .welcomeSubtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  .offerCards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offerCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    max-width: 180px;
+  }
+
+  .offerImage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .offerText {
+    text-align: left;
+    flex: 1;
+  }
+
+  .offerTitle {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .offerDesc {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 400;
+  }
   color: var(--text-light);
+  .welcomeSection {
+    padding: 1rem 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .welcomeText {
+    font-size: 2rem;
+    color: #8b4513;
+    font-weight: 400;
+    font-family: "Brush Script MT", cursive;
+    margin: 1rem 0 0.5rem;
+    text-transform: lowercase;
+  }
+
+  .welcomeSubtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  .offerCards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offerCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    max-width: 180px;
+  }
+
+  .offerImage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .offerText {
+    text-align: left;
+    flex: 1;
+  }
+
+  .offerTitle {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .offerDesc {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 400;
+  }
   text-align: center;
+  .welcomeSection {
+    padding: 1rem 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .welcomeText {
+    font-size: 2rem;
+    color: #8b4513;
+    font-weight: 400;
+    font-family: "Brush Script MT", cursive;
+    margin: 1rem 0 0.5rem;
+    text-transform: lowercase;
+  }
+
+  .welcomeSubtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  .offerCards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offerCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    max-width: 180px;
+  }
+
+  .offerImage {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .offerText {
+    text-align: left;
+    flex: 1;
+  }
+
+  .offerTitle {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .offerDesc {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 400;
+  }
+}
+.welcomeSection {
+  padding: 1rem 1.5rem 2rem;
+  text-align: center;
+}
+
+.welcomeText {
+  font-size: 2rem;
+  color: #8b4513;
+  font-weight: 400;
+  font-family: "Brush Script MT", cursive;
+  margin: 1rem 0 0.5rem;
+  text-transform: lowercase;
+}
+
+.welcomeSubtext {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.offerCards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.offerCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  max-width: 180px;
+}
+
+.offerImage {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.offerText {
+  text-align: left;
+  flex: 1;
+}
+
+.offerTitle {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.offerDesc {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 400;
 }

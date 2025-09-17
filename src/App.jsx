@@ -9,29 +9,33 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router>
-      <nav className="nav">
-        <Link to="/">Home</Link>
-        <Link to="/cart">Cart</Link>
-      </nav>
+    <div className="app">
+      <Router>
+        <nav className="nav">
+          <Link to="/">Home</Link>
+          <Link to="/cart">Cart</Link>
+        </nav>
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="app">
-              <HeroSection />
-              <main className="main">
-                <ProductList />
-              </main>
-            </div>
-          }
-        />
+        <div className="page-container">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeroSection />
+                  <main className="main">
+                    <ProductList />
+                  </main>
+                </>
+              }
+            />
 
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/cart" element={<CartPage />} />
-      </Routes>
-    </Router>
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/cart" element={<CartPage />} />
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
 };
 

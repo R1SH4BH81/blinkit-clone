@@ -7,17 +7,16 @@ const SearchBar = () => {
     setQuery(e.target.value);
   };
   return (
-    <div>
+    <div className={styles.searchContainer}>
       <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
+        <div className={styles.searchIcon}>🔍</div>
         <input
           type="text"
           onChange={handleChange}
           className={styles.input}
-          placeholder="search any product"
+          placeholder="Search 'Chocolate'"
         />
-        <button type="submit" className={styles.button}>
-          Search
-        </button>
+        <div className={styles.micIcon}>🎤</div>
       </form>
     </div>
   );
