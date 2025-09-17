@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Hero from "./section/Hero.jsx";
 import ProductList from "./components/ProductList.jsx";
-
+import { HomeIcon, CartIcon } from "./utils/IconHelper.jsx";
 import ProductDetail from "./pages/productPage";
 import CartPage from "./pages/CartPage";
 import "./App.css";
@@ -12,8 +12,12 @@ const App = () => {
     <div className="app">
       <Router>
         <nav className="nav">
-          <Link to="/">Home</Link>
-          <Link to="/cart">Cart</Link>
+          <Link to="/">
+            <HomeIcon />
+          </Link>
+          <Link to="/cart">
+            <CartIcon />
+          </Link>
         </nav>
 
         <div className="page-container">

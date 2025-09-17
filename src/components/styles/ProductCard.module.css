@@ -116,10 +116,13 @@
 
 .actions {
   margin-top: auto;
+  margin-left: auto;
 }
 
 .addButton {
   width: 100%;
+  display: inline-flex;
+  gap: 10px;
   padding: 0.75rem;
   border: none;
   background: linear-gradient(
@@ -127,9 +130,10 @@
     var(--bg-yellow, #ffaa02) 0%,
     var(--bg-yellow-dark, #e6960a) 100%
   );
-  color: var(--text-dark);
+  color: var(--text-semiblack);
   border-radius: 12px;
   font-size: 1rem;
+  width: 150px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;

@@ -5,10 +5,10 @@
 
 .welcomeText {
   font-size: 2rem;
-  color: #8b4513;
+  color: #000000;
   font-weight: 400;
   font-family: "Brush Script MT", cursive;
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0 0;
   text-transform: lowercase;
 }
 

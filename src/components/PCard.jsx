@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from "./styles/ProductCard.module.css";
 import { Link } from "react-router-dom";
 import { CartContext } from "../contextApi/cartContext";
-
+import { AddCartIcon } from "../utils/IconHelper";
 const ProductCard = ({ product }) => {
   const { addToCart, removeFromCart, cart } = useContext(CartContext);
 
@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div className={styles.priceSection}>
-          <p className={styles.price}>rs{product.price}</p>
+          <p className={styles.price}>₹{product.price}</p>
         </div>
 
         <div className={styles.actions}>
@@ -37,7 +37,7 @@ const ProductCard = ({ product }) => {
               className={styles.addButton}
               onClick={() => addToCart(product)}
             >
-              Add to Cart
+              <AddCartIcon /> Add to Cart
             </button>
           ) : (
             <div className={styles.counter}>
