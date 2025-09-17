@@ -1,0 +1,77 @@
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+
+.info {
+  flex: 1;
+}
+
+.title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.category {
+  font-size: var(--fs-sm);
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-size: var(--fs-base);
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.rating {
+  font-size: var(--fs-sm);
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--fs-base);
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: var(--primary-dark);
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: var(--fs-lg);
+  color: var(--text-light);
+  margin-top: 3rem;
+}

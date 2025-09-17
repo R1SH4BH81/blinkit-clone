@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles/hero.module.css";
 import { HeroHeader } from "../components/HeroHeader";
-import { HeroWelcome } from "../components/HeroWelcome";
-import { SearchBar } from "../components/SearchBar";
-const heroSection = () => {
+import HeroWelcome from "../components/HeroWelcome";
+import SearchBar from "../components/SearchBar";
+const HeroSection = () => {
   return (
     <div className={styles.heroSection}>
       <HeroHeader />
@@ -13,4 +13,4 @@ const heroSection = () => {
   );
 };
 
-export default heroSection;
+export default HeroSection;

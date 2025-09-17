@@ -1,5 +1,5 @@
 import React from "react";
-import { userIcon } from "../utils/IconHelper";
+import { UserIcon } from "../utils/IconHelper";
 import styles from "./styles/heroHeader.module.css";
 export const HeroHeader = ({ time, location }) => {
   return (
@@ -12,7 +12,7 @@ export const HeroHeader = ({ time, location }) => {
         </div>
         <div className={styles.right}>
           <span className={styles.userIcon}>
-            <userIcon />
+            <UserIcon />
           </span>
         </div>
       </div>

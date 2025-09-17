@@ -1,10 +1,12 @@
-import { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from "react";
+
 export const ProductsContext = createContext();
-const ProductProvider = ({ children }) => {
+
+const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [loading, setLoading] = useState([]);
-  const [query, setQuery] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -14,12 +16,11 @@ const ProductProvider = ({ children }) => {
         setProducts(data);
         setFiltered(data);
         setLoading(false);
-      } catch (error) {
-        console.error(`product cant ne fetched ${error}`);
+      } catch (err) {
+        console.error("Error fetching products", err);
         setLoading(false);
       }
     };
-
     fetchProducts();
   }, []);
 
@@ -31,12 +32,11 @@ const ProductProvider = ({ children }) => {
       setFiltered(products.filter((p) => p.title.toLowerCase().includes(q)));
     }
   }, [query, products]);
+  return (
+    <ProductsContext.Provider value={{ products, filtered, loading, setQuery }}>
+      {children}
+    </ProductsContext.Provider>
+  );
 };
 
-return (
-  <ProductsContext.Provider value={{ products, filtered, loading, setQuery }}>
-    {children}
-  </ProductsContext.Provider>
-);
-
-export default ProductProvider;
+export default ProductsProvider;
