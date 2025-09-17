@@ -5,14 +5,21 @@
   --text-dark: #0e0e0e;
   --text-semiblack: #333333;
   --bg-yellow: #ffaa02;
+  --bg-yellow-light: #fff3d6;
+  --bg-yellow-dark: #e6960a;
   --text-light: #666666;
   --primary: #28a745;
+  --accent: #ff6b35;
+  --border-light: #e8e8e8;
+  --shadow-light: rgba(255, 170, 2, 0.1);
+  --shadow-medium: rgba(255, 170, 2, 0.2);
 
   /* Font sizes */
   --fs-xl: 1.5rem;
   --fs-lg: 1.2rem;
   --fs-base: 1rem;
   --fs-sm: 0.9rem;
+  --fs-xs: 0.8rem;
 
   /* Font weights */
   --fw-bold: 700;
@@ -21,5 +28,197 @@
 
   /* Spacing */
   --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
   --shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 12px rgba(255, 170, 2, 0.3);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  background: linear-gradient(135deg, var(--bg-yellow-light) 0%, #ffffff 100%);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.nav {
+  background: linear-gradient(
+    135deg,
+    var(--bg-yellow) 0%,
+    var(--bg-yellow-dark) 100%
+  );
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 20px var(--shadow-medium);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.nav a:hover::before {
+  left: 100%;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Modern Button Styles */
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--bg-yellow) 0%,
+    var(--bg-yellow-dark) 100%
+  );
+  color: var(--text-dark);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-lg);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px var(--shadow-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.6s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--bg-yellow-dark);
+  border: 2px solid var(--bg-yellow);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-lg);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-yellow);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow-medium);
+}
+
+/* Card Styles */
+.card {
+  background: var(--bg-white);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 32px rgba(255, 170, 2, 0.1);
+  transition: var(--transition);
+  overflow: hidden;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--bg-yellow), var(--accent));
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px var(--shadow-medium);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    padding: 1rem;
+  }
+
+  .nav a {
+    margin-right: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: var(--fs-sm);
+  }
+
+  .main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav a {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
