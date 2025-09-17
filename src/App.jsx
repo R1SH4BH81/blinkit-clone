@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import HeroSection from "./section/HeroSection";
-import ProductList from "./components/ProductList";
+import HeroSection from "./section/HeroSection.jsx";
+import ProductList from "./components/ProductList.jsx";
 
 import ProductDetail from "./pages/productPage";
 import CartPage from "./pages/CartPage";
