@@ -9,14 +9,13 @@ const SearchBar = () => {
   return (
     <div className={styles.searchContainer}>
       <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-        <div className={styles.searchIcon}>🔍</div>
         <input
           type="text"
           onChange={handleChange}
           className={styles.input}
           placeholder="Search 'Chocolate'"
         />
-        <div className={styles.micIcon}>🎤</div>
+        <div className={styles.searchIcon}>🔍</div>
       </form>
     </div>
   );

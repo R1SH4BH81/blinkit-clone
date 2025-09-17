@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ProductsContext } from "../contextApi/productContext";
 import ProductCard from "./PCard";
-import styles from "./ProductList.module.css";
+import styles from "./styles/ProductList.module.css";
 import { Loader } from "./Loader";
 const ProductList = () => {
   const { filtered, loading } = useContext(ProductsContext);
