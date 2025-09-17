@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./styles/hero.module.css";
 import { HeroHeader } from "../components/HeroHeader";
 import HeroWelcome from "../components/HeroWelcome";

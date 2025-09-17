@@ -2,11 +2,16 @@ import React, { useContext } from "react";
 import { ProductsContext } from "../contextApi/productContext";
 import ProductCard from "./ProductCard";
 import styles from "./ProductList.module.css";
-
+import { Loader } from "./Loader";
 const ProductList = () => {
   const { filtered, loading } = useContext(ProductsContext);
 
-  if (loading) return <p className={styles.loading}>Loading products...</p>;
+  if (loading)
+    return (
+      <p className={styles.loading}>
+        <Loader />
+      </p>
+    );
   if (!filtered.length)
     return <p className={styles.empty}>No products found.</p>;
 

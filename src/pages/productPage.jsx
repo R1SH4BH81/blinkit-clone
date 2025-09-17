@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../contextApi/cartContext";
 import styles from "./styles/productDetails.module.css";
-
+import { Loader } from "../components/Loader";
 const ProductDetail = () => {
   const { id } = useParams();
   const { addToCart } = useContext(CartContext);
@@ -24,7 +24,12 @@ const ProductDetail = () => {
     fetchProduct();
   }, [id]);
 
-  if (loading) return <p className={styles.loading}>Loading...</p>;
+  if (loading)
+    return (
+      <p className={styles.loading}>
+        <Loader />
+      </p>
+    );
   if (!product) return <p className={styles.error}>Product not found</p>;
 
   return (
